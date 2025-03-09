@@ -4,7 +4,7 @@ export default function Resume() {
     return (
     <div>
       <main>
-        <section class="content-box-area mt-4">
+        <section class="content-box-area mt-5">
           <div class="container">
             <div class="row g-4">
             <ProfileCard />

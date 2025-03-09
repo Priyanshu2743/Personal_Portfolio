@@ -11,10 +11,10 @@ function ProfileCard(){
                       <div className="card profile-card">
                         <div className="card-body">
                           <div className="image text-center">
-                            <img src="assets/img/images/profile.png" alt="profile" />
+                            <img src="assets/img/images/unnamed.png" alt="profile" />
                           </div>
                           <div className="text">
-                            <h3 className="card-title"> Priyanshu Mittal 👋</h3>
+                            <h3 className="card-title"> Antara 👋</h3>
                             <p>A Passionate <span>Full Stack Developer</span> 🖥️ & <span>Product Designer</span> having <span> 0
                                 years</span> of Experiences over 0+
                               Country Worldwide.</p>

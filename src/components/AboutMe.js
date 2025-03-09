@@ -4,7 +4,7 @@ export default function AboutMe() {
     return (
     <main>
 
-      <section class="content-box-area mt-4">
+      <section class="content-box-area mt-5">
         <div class="container">
           <div class="row g-4">
             <ProfileCard />
@@ -13,9 +13,9 @@ export default function AboutMe() {
                 <div class="card-body">
                   <div class="top-info">
                     <div class="text">
-                      <h1 class="main-title">Hi, This Is <span>Priyanshu Mittal</span> 👋</h1>
+                      <h1 class="main-title">Hi, This Is <span> Antara </span> 👋</h1>
                       <p>A Passionate <b>Full Stack Developer</b> 🖥️ & <b>Product Designer</b> having
-                        <b>0 years</b> of Experiences. </p>
+                        <b> 10 years</b> of Experiences over 24+ Countries Worldwide. </p>
                     </div>
                     <div class="available-btn">
                       <span><i class="fas fa-circle"></i> Available For Hire</span>

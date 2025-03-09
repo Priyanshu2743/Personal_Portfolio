@@ -402,7 +402,7 @@ p {
 ===============================*/
 
 .home-area {
-	margin-top: 3%;
+	margin-top: 3.75%;
 	margin-bottom: 2%;
 }
 
@@ -419,17 +419,19 @@ p {
 }
 
 .profile-card .image {
-	background-color: var(--background);
+	/* background-color: var(--background); */
 	border-radius: 8px;
 	overflow: hidden;
 }
 
 .profile-card .image img {
-	margin-top: 10px;
+	/* margin-top: 10px; */
+	border-radius: 8px;
 }
 
 .profile-card .text {
 	margin-top: 24px;
+	margin-left: 10px;
 }
 
 .profile-card .text p {
@@ -803,7 +805,7 @@ p {
 
 .content-box-area .profile-card {
 	position: sticky;
-	top: 94px;
+	top: 120px;
 }
 
 .content-box-area .card {
@@ -811,7 +813,7 @@ p {
 }
 
 .content-box-card .card-body {
-	padding: 48px 40px 40px;
+	padding: 60px 40px 40px;
 }
 
 .content-box-card .top-info {
@@ -828,7 +830,7 @@ p {
 }
 
 .content-box-card .top-info .main-title {
-	font-size: 40px;
+	font-size: 35px !important;
 	font-weight: 600;
 	color: var(--black);
 	line-height: 0.9em;
@@ -840,14 +842,15 @@ p {
 }
 
 .content-box-card .top-info p {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 	color: var(--light-black);
 	line-height: 1.333em;
+	margin-bottom: 5px !important;
 }
 
 .content-box-card .top-info p b {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	color: var(--black);
 }
@@ -902,7 +905,7 @@ p {
 	display: flex;
 	gap: 30px;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 22.5px;
 }
 
 .content-box-card .counter-area .counter {
@@ -964,11 +967,11 @@ p {
 }
 
 .content-box-card .main-common-title {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 500;
 	color: var(--black);
 	line-height: 1.2em;
-	margin-bottom: 32px;
+	margin-bottom: 15px;
 }
 
 .content-box-card .working-with-area .working-with-main {
@@ -980,8 +983,8 @@ p {
 .content-box-card .working-with-area .working-with-main .items {
 	border-radius: 16px;
 	background-color: var(--background);
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -993,14 +996,15 @@ p {
 }
 
 .content-box-card .client-feedback {
-	margin-top: 50px;
+	margin-top: 45px;
 }
 
 .content-box-card .client-feedback .feedback-item {
 	margin: 0 12px;
 	background-color: var(--background);
-	padding: 24px;
+	padding: 24px 24px 18px;
 	border-radius: 8px;
+	margin-bottom: 20px;
 }
 
 .content-box-card .client-feedback .feedback-item .feedback-top-info {
