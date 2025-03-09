@@ -193,16 +193,6 @@ export default function Resume() {
       {/* <!-- background shape area end --> */}
     </main>
     {/* <!-- main area part end --> */}
-
-    {/* <!-- footer part start --> */}
-    <footer class="footer-area">
-      <div class="container">
-        <div class="text text-center">
-          <p>@ BentoFolio 2024, Design By <a href=" ">MarvelTheme</a></p>
-        </div>
-      </div>
-    </footer>
-    {/* <!-- footer part end --> */}
   </div>
     );
 }

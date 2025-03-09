@@ -295,6 +295,7 @@ p {
 .header-area .navbar-info .nav-item {
 	position: relative;
 	display: inline-block;
+	margin: 0 2.3px;
 }
 
 .header-area .navbar-info .nav-link {
@@ -402,7 +403,7 @@ p {
 
 .home-area {
 	margin-top: 3%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 .card {
@@ -663,8 +664,8 @@ p {
 
 .work-experiance-card .work-experiance-slider li .info .icon {
 	border-radius: 8px;
-	width: 32px;
-	height: 32px;
+	width: 38px;
+	height: 38px;
 	background-color: var(--background);
 	display: flex;
 	justify-content: center;
@@ -680,6 +681,8 @@ p {
 	font-weight: 600;
 	color: var(--black);
 	line-height: 1.5em;
+	margin-bottom: 0;
+	/* margin-top: 10px; */
 }
 
 .work-experiance-card .work-experiance-slider li .info .text .subtitle {
@@ -2060,6 +2063,7 @@ p {
 
 .footer-area {
 	padding-top: 24px;
+	padding-bottom: 4px !important;
 }
 
 .footer-area .text p {
@@ -2067,6 +2071,7 @@ p {
 	font-weight: 400;
 	color: var(--black);
 	line-height: 1.257em;
+	margin-bottom: 5px !important;
 }
 
 .footer-area .text p a {
