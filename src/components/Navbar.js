@@ -1,6 +1,38 @@
+import React, { useState, useEffect } from "react";
+// import "./Header.css"; // Ensure the styles are included
+
 function Navbar({ links, isScrolled }) {
+
+  const [isSticky, setIsSticky] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [navbarPosition, setNavbarPosition] = useState(20); // Initial top position
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling Down
+        setNavbarPosition(0);
+        setIsSticky(true);
+      } else {
+        // Scrolling Up
+        if (currentScrollY <= 100) {
+          setIsSticky(false);
+          setNavbarPosition(20);
+        }
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className={`header-area ${isScrolled ? "header-sticky" : ""}`}>
+    <header className={`header-area ${isSticky ? "sticky" : ""}`} style={{ top: navbarPosition }}>
       <nav className="navbar">
         <div className="container">
           <div className="menu-container">

@@ -1,4 +1,5 @@
 import { AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProfileCard from "./components/Profile_card";
 import Blog from "./components/Blog";
@@ -9,13 +10,19 @@ import ContactMe from "./components/ContactMe";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 import "./App.css";
 import "./components/CSS/Slick.css";
 import "./components/CSS/bootstrap.min.css";
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  
     return (
-            <div className="page-content min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-400 to-purple-500 p-6 text-white">
+      <>
+        {!isLoaded && <Loader onLoaded={() => setIsLoaded(true)} />}
+        <div className={isLoaded ? "content visible" : "content"}>
+           <div className="page-content min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-400 to-purple-500 p-6 text-white">
               <Navbar />
               {/* <ProfileCard /> */}
               <AnimatePresence mode="wait">
@@ -31,6 +38,8 @@ function App() {
               </AnimatePresence>
               <Footer />
             </div>
+        </div>
+      </>
     );
 }
 

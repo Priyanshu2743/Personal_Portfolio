@@ -1,30 +1,31 @@
 /*
-  Theme Name: Bentofolio - Bootstrap Personal Portfolio Template
-  Support: marveltheme@gmail.com
-  Description: Bentofolio - Bootstrap Personal Portfolio Template
+  Theme Name: PortFolio - Personal Portfolio Template
+  Support: priyanshumittal2743@gmail.com
+  Description: Portfolio - Personal Portfolio Template
   Version: 1.0
 */
+
+/*=============================
+	Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&amp;display=swap');
 
 /* CSS Index
 ============================
 01. Variable CSS
 02. Common CSS
-03. Header
-04. Home
-05. About
-06. Services
-07. Portfolio
-08. Blog
-09. Contact
-10. Footer
-11. Theme Control
+03. Loader CSS Start
+04. Header
+05. Home
+06. About
+07. Services
+08. Portfolio
+09. Blog
+10. Contact
+11. Footer
+12. Theme Control
 ============================
 */
-
-/*=============================
-	1. Google Fonts
-===============================*/
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&amp;display=swap');
 
 /*=============================
 	01. Variable CSS start
@@ -232,7 +233,68 @@ p {
 }
 
 /*=============================
-	03. Header CSS Start
+	03. Loader CSS Start
+===============================*/
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9); /* Dark background */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	transition: opacity 0.5s ease-in-out, visibility 0.5s;
+  }
+  
+  .preloader.hide {
+	opacity: 0;
+	visibility: hidden;
+  }
+  
+  .text-container h2 {
+	font-size: 2rem;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+	animation: fadeInOut 1s infinite alternate;
+  }
+  
+  /* Smooth name change effect */
+  @keyframes fadeInOut {
+	from {
+	  opacity: 0.5;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+	width: 80%;
+	max-width: 400px;
+	height: 8px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .progress {
+	height: 100%;
+	width: 0;
+	background: #4caf50; /* Green progress bar */
+	transition: width 0.25s ease-in-out;
+  }
+  
+
+/*=============================
+	04. Header CSS Start
 ===============================*/
 
 .header-area {
@@ -398,7 +460,7 @@ p {
 }
 
 /*=============================
-	04. Home page CSS Start
+	05. Home page CSS Start
 ===============================*/
 
 .home-area {
@@ -800,7 +862,7 @@ p {
 }
 
 /*=============================
-	05. About page CSS Start
+	06. About page CSS Start
 ===============================*/
 
 .content-box-area .profile-card {
@@ -1378,7 +1440,7 @@ p {
 }
 
 /*=============================
-	06. services page CSS STart
+	07. services page CSS STart
 ===============================*/
 
 .services {
@@ -1474,7 +1536,7 @@ p {
 }
 
 /*=============================
-	07. Portfolio page CSS Start
+	08. Portfolio page CSS Start
 ===============================*/
 
 .portfolio-card .top-info {
@@ -1793,7 +1855,7 @@ p {
 }
 
 /*=============================
-	08. Blog page CSS Start
+	09. Blog page CSS Start
 ===============================*/
 
 .article-area {
@@ -2013,7 +2075,7 @@ p {
 
 
 /*=============================
-	09. Contact page CSS Start
+	10. Contact page CSS Start
 ===============================*/
 
 .leave-comments-area .comments-box .form-select {
@@ -2062,7 +2124,7 @@ p {
 }
 
 /*=============================
-	10. Footer CSS Start
+	11. Footer CSS Start
 ===============================*/
 
 .footer-area {
@@ -2087,7 +2149,7 @@ p {
 }
 
 /*=============================
-	11. Theme Control CSS Start
+	12. Theme Control CSS Start
 ===============================*/
 
 .dark-theme {
